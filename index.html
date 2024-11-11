@@ -120,6 +120,27 @@
         margin-right: 20px;
       }
 
+      #search {
+        font-family: "Noto Serif Khmer", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+
+        color: #333333; /* Dark gray text color */
+        padding: 10px; /* Padding for better spacing */
+        border: 2px solid #ccc; /* Light gray border */
+        border-radius: 5px; /* Rounded corners */
+
+        width: 100%;
+        max-width: 400px; /* Control the maximum width */
+        box-sizing: border-box; /* Includes padding and borders within the width */
+      }
+
+      #search::placeholder {
+        color: #999; /* Lighter color for placeholder text */
+        font-style: normal;
+      }
+
       main.mainContent {
         flex: 3;
         display: grid;
