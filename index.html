@@ -239,6 +239,7 @@
             id="lang-en"
             class="lang-btn"
             style="font-family: Noto Serif Khmer, serif"
+            data-key="En_btn"
           >
             English
           </button>
@@ -246,6 +247,7 @@
             id="lang-kh"
             class="lang-btn"
             style="font-family: Noto Serif Khmer, serif"
+            data-key="Kh_btn"
           >
             Khmer
           </button>
@@ -254,7 +256,7 @@
 
       <section id="offer">
         <h2>FREERESOURCES.COM</h2>
-        <p>Download your awesome resources today!</p>
+        <p data-key="Downloadyour">Download your awesome resources today!</p>
       </section>
 
       <div id="content">
@@ -267,31 +269,51 @@
           />
           <div id="searchMessage" style="color: red; display: none"></div>
           <nav class="menu">
-            <h2>Categories</h2>
+            <h2 data-key="C1">Categories</h2>
             <hr />
             <ul>
               <li>
-                <a href="#" class="categoryLink" data-category="all"
+                <a
+                  href="#"
+                  class="categoryLink"
+                  data-category="all"
+                  data-key="C2"
                   >Show All</a
                 >
               </li>
               <li>
-                <a href="#" class="categoryLink" data-category="category1"
+                <a
+                  href="#"
+                  class="categoryLink"
+                  data-category="category1"
+                  data-key="C3"
                   >Software</a
                 >
               </li>
               <li>
-                <a href="#" class="categoryLink" data-category="category2"
+                <a
+                  href="#"
+                  class="categoryLink"
+                  data-category="category2"
+                  data-key="C4"
                   >Drivers</a
                 >
               </li>
               <li>
-                <a href="#" class="categoryLink" data-category="category3"
+                <a
+                  href="#"
+                  class="categoryLink"
+                  data-category="category3"
+                  data-key="C5"
                   >Fonts</a
                 >
               </li>
               <li>
-                <a href="#" class="categoryLink" data-category="category4"
+                <a
+                  href="#"
+                  class="categoryLink"
+                  data-category="category4"
+                  data-key="C6"
                   >Other</a
                 >
               </li>
@@ -313,6 +335,7 @@
               href="Idm_allversion_act.rar"
               class="downloadButton"
               title="Download IDM Activator"
+              data-key="Dl"
               >Download</a
             >
           </article>
@@ -327,6 +350,7 @@
               title="Download Office 2019"
               target="_blank"
               rel="noopener noreferrer"
+              data-key="Dl"
               >Download</a
             >
           </article>
@@ -345,6 +369,7 @@
               href="KMSAuto_win10_act.rar"
               class="downloadButton"
               title="Download Office Activator"
+              data-key="Dl"
               >Download</a
             >
           </article>
@@ -363,6 +388,7 @@
               href="Office_win11_act.rar"
               class="downloadButton"
               title="Download Office Activator"
+              data-key="Dl"
               >Download</a
             >
           </article>
@@ -381,6 +407,7 @@
               title="Download Cisco Packet Tracer"
               target="_blank"
               rel="noopener noreferrer"
+              data-key="Dl"
               >Download</a
             >
           </article>
@@ -395,6 +422,7 @@
               href="KhmerUnicode.rar"
               class="downloadButton"
               title="Download Khmer Unicode"
+              data-key="Dl"
               >Download</a
             >
           </article>
@@ -409,6 +437,7 @@
               title="Download Adobe Dreamweaver"
               target="_blank"
               rel="noopener noreferrer"
+              data-key="Dl"
               >Download</a
             >
           </article>
@@ -421,6 +450,7 @@
               href="Redragon_M808_24G_Software.zip"
               class="downloadButton"
               title="Download Redragon M808 Software"
+              data-key="Dl"
               >Download</a
             >
           </article>
@@ -433,6 +463,7 @@
               href="CH341SER_Driver_Win10_11.rar"
               class="downloadButton"
               title="Download CH341SER Driver"
+              data-key="Dl"
               >Download</a
             >
           </article>
@@ -449,6 +480,7 @@
               href="khmer_os_content_regular.zip"
               class="downloadButton"
               title="Download Khmer OS Content regular Fonts"
+              data-key="Dl"
               >Download</a
             >
           </article>
@@ -465,6 +497,7 @@
               href="enhance_cufonfonts.zip"
               class="downloadButton"
               title="Download Khmer Enhance Fonts"
+              data-key="Dl"
               >Download</a
             >
           </article>
@@ -473,7 +506,11 @@
             <img src="freeresources.com_HD.png" alt="icon" width="100" />
             <h3>More Resources</h3>
             <p class="description">New resources are coming! Stay tuned.</p>
-            <a href="#" class="downloadButton" title="Download"
+            <a
+              href="#"
+              class="downloadButton"
+              title="Download"
+              data-key="Dlsoon"
               >Coming soon...</a
             >
           </article>
@@ -493,22 +530,28 @@
           </p>
         </div>
         <div class="footerlinks">
-          <p><a href="#" title="Privacy Policy">Privacy Policy</a></p>
-          <p><a href="#" title="Terms of Service">Terms of Service</a></p>
           <p>
             <a
               href="https://t.me/freeresourcesdotcombot"
               title="Telegram"
               target="_blank"
               rel="noopener noreferrer"
-              ><i>Telegram</i></a
+              data-key="Tel"
+              >Telegram</a
             >
+          </p>
+          <p data-key="PP">
+            <a href="#" title="Privacy Policy">Privacy Policy</a>
+          </p>
+          <p data-key="TM">
+            <a href="#" title="Terms of Service">Terms of Service</a>
           </p>
         </div>
       </footer>
     </div>
 
     <script>
+      //translate section
       const translations = {
         en: {
           siteTitle: "FREERESOURCES.COM",
@@ -516,8 +559,23 @@
           categoriesTitle: "Categories",
           resource1Title: "IDM Activator",
           resource1Description: "Run this cmd to activate your IDM.",
+          //new
           thankYou: "Thank you for visiting our resource download center.",
-          if_you_have: "If you have any questions, feel free to contact us.",
+          if_you_have: "If you have any questions, feel free to contact us on:",
+          En_btn: "English",
+          Kh_btn: "Khmer",
+          Downloadyour: "Download your awesome resources today!",
+          Dl: "Download",
+          Dlsoon: "Coming soon...",
+          C1: "Categories",
+          C2: "Show All",
+          C3: "Software",
+          C4: "Drivers",
+          C5: "Fonts",
+          C6: "Other",
+          Tel: "Our official Telegram.",
+          PP: "Privacy Policy",
+          TM: "Terms of Service",
         },
         kh: {
           siteTitle: "មជ្ឈមណ្ឌលធនធានឥតគិតថ្លៃ",
@@ -525,8 +583,23 @@
           categoriesTitle: "ប្រភេទ",
           resource1Title: "កម្មវិធីសម្រួល IDM",
           resource1Description: "ដំណើរការនេះ cmd ដើម្បីសម្រួល IDM របស់អ្នក។",
+          //new
           thankYou: "សូមអរគុណដែលបានចូលមកកាន់មជ្ឈមណ្ឌលទាញយកធនធានរបស់យើង។",
           if_you_have: "ប្រសិនបើលោកអ្នកមានចម្ងល់ សូមធ្វើការទាក់ទងមកកាន់៖",
+          En_btn: "ភាសាអង់គ្លេស",
+          Kh_btn: "ភាសាខ្មែរ",
+          Downloadyour: "ទាញយកធនធានល្អៗរបស់អ្នកនៅថ្ងៃនេះ!",
+          Dl: "ទាញយក",
+          Dlsoon: "មកដល់ក្នុងពេលឆាប់ៗ...",
+          C1: "ប្រភេទនៃធនធាន",
+          C2: "បង្ហាញទាំងអស់",
+          C3: "ប្រភេទកម្មវិធី",
+          C4: "ប្រភេទដ្រាយវ័រ",
+          C5: "ប្រភេទអក្សរ",
+          C6: "ប្រភេទផ្សេងៗ",
+          Tel: "តេលេក្រាមផ្លូវការរបស់យើង។",
+          PP: "គោលការណ៍ឯកជនភាព",
+          TM: "លក្ខខណ្ឌនៃសេវាកម្ម",
         },
       };
 
